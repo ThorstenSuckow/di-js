@@ -1,11 +1,9 @@
-const path = require("path");
-
-module.exports = {
+export default {
     entry: './src/index.js',
     mode: 'development',
     devServer: {
         static: {
-            directory: path.join(__dirname, './'),
+            directory: './'
         },
         port: 8016,
     }
